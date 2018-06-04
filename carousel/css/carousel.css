@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+}
+.wrapper {
+	position: relative;
+	width: 520px;
+	height: 280px;
+	margin: 100px auto 0;
+	overflow: hidden;
+	border: 3px solid #000;
+}
+.img-box {
+	position: absolute;
+	left: 0;
+	width: 3120px;
+	height: 280px;
+}
+.img-box li {
+	display: inline-block;
+}
+.btn {
+	display: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	width: 100%;
+	height: 30px;
+}
+.btn a {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	
+	background: #333;
+	opacity: 1;
+}
+.btn .prevBtn {
+	left: 0;
+	border-radius: 0 50% 50% 0;
+	background-image: url(../img/left.jpg);
+	background-repeat: no-repeat;
+	background-size: 70% 70%;
+	background-position: 0px 5px;
+}
+.btn .nextBtn {
+	right: 0;
+	border-radius: 50% 0 0 50%;
+	background-image: url(../img/right.jpg);
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-position: 10px 4px;
+}
+.order {
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	bottom: 30px;
+	text-align: center;
+}
+.order ul {
+	display: inline-block;
+	background: rgba(0,0,0,0.7);	
+	border-radius: 8px;
+}
+.order ul li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 3px 3px;
+	border-radius: 50%;
+	background: #fff;
+	cursor: pointer;
+}
+.order ul .active {
+	background: #f40;
+}
