@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.wrapper {
+			position: relative;
+			top: 180px;
+			width: 300px;
+			height: 300px;
+			margin: auto;
+			transform-style: preserve-3d;
+			transform-origin: 50% 50% -150px;
+			animation: move 5s linear infinite;
+		}
+		.wrapper:hover {
+			animation-play-state: paused;
+		}
+		.item {
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			text-align: center;
+			line-height: 300px;
+			/*opacity: 0.9;*/
+		}
+		.item:nth-of-type(1) {
+			background-color: #FF8C00;
+			transform: rotateX(0deg) translate3d(0,0,0);
+		}
+		.item:nth-of-type(2) {
+			background-color: #ABABAB;
+			transform: rotateX(180deg) translate3d(0,0,300px);
+		}
+		.item:nth-of-type(3) {
+			background-color: #8B0000;
+			transform-origin: bottom;
+			transform: translate3d(0,-300px,0) rotateX(90deg);
+		}
+		.item:nth-of-type(4) {
+			background-color: #7A67EE;
+			transform-origin: top;
+			transform: translate3d(0,300px,0) rotateX(-90deg);
+		}
+		.item:nth-of-type(5) {
+			background-color: #3B3B3B;
+			transform-origin: right;
+			transform: translate3d(-300px,0,0) rotateY(-90deg);
+		}
+		.item:nth-of-type(6) {
+			background-color: #FF0000;
+			transform-origin: left;
+			transform: translate3d(300px,0,0) rotateY(90deg);
+		}
+		@keyframes move {
+			0% {
+				transform: rotate3d(1,0,0,0deg) rotate3d(0,1,0,0deg) rotate3d(0,0,1,0deg);
+			}
+			/*25% {
+				transform: rotate3d(1,0,0,0deg) rotate3d(0,1,0,0deg);
+			}*/
+			50% {
+				transform: rotate3d(1,0,0,90deg) rotate3d(0,1,0,240deg) rotate3d(0,0,1,300deg);
+			}
+			/*75% {
+				transform: rotate3d(1,0,0,0deg) rotate3d(0,1,0,0deg);
+			}*/
+			100% {
+				transform: rotate3d(1,0,0,360deg) rotate3d(0,1,0,360deg) rotate3d(0,0,1,360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+	</div>
+</body>
+</html>
