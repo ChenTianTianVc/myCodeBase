@@ -1,0 +1,119 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+.startPage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	z-index: 999;
+}
+.startBtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background-image: url(../img/startGame.png);
+	height: 170px;
+	width: 200px;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	background-image: url(../img/bg.jpg);
+	background-size: 100% 100%;
+}
+.left-side {
+	position: absolute;
+	width: 24%;
+	height: 1000px;
+}
+.left-side img {
+	display: none;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.main {
+	position: absolute;
+	left: 25%;
+	width: 50%;
+	height: 90%;
+}
+.header {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+.score {
+	line-height: 80px;
+	color: #ddd;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.content {
+	position: absolute;
+	left: 10%;
+	top: 34%;
+	width: 79.5%;
+	height: 36.5%;
+}
+.loser {
+	display: none;
+	width: 100%;
+	height: 1000px;
+	top: 0;
+	left: 0;
+}
+.con {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url('../img/startP.jpg');
+	background-size: 100% 100%;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+	border-radius: 20px;
+}
+.loserScore {
+	position: absolute;
+	top: 42%;
+	left: 40%;
+	display: block;
+	height: 30px;
+	width: 40px;
+	color: #222;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/closeBtn.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.food {
+	background-image: url(../img/apple.png);
+	background-size: 100% 100%;
+}
+.head {
+	background-image: url(../img/head.png);
+	background-size: 100% 100%;
+}
+.body {
+	background-image: url(../img/body.png);
+	background-size: 100% 100%;
+}
